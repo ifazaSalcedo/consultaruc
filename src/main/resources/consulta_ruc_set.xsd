@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://wsoap.com/pwserver/consulta"
+           targetNamespace="http://wsoap.com/pwserver/consulta"
+           elementFormDefault="qualified">
+
+    <xs:element name="consultaRucRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rucParamentro" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="consultaRucResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rucContribuyente" type="tns:rucContribuyente"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="rucContribuyente">
+        <xs:sequence>
+            <xs:element name="ruc" type="xs:string"/>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellido" type="xs:string"/>
+            <xs:element name="dv" type="xs:string"/>
+            <xs:element name="rucAnterior" type="xs:string"/>
+            <xs:element name="rucEstado" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

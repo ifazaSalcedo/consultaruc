@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.02.26 a las 12:33:20 PM PYST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://wsoap.com/pwserver/consulta">
+    <schemaBindings map="false">
+      <package name="com.wsoap.pwserver.consulta"/>
+    </schemaBindings>
+    <bindings scd="tns:consultaRucRequest">
+      <class ref="com.wsoap.pwserver.consulta.ConsultaRucRequest"/>
+    </bindings>
+    <bindings scd="tns:consultaRucResponse">
+      <class ref="com.wsoap.pwserver.consulta.ConsultaRucResponse"/>
+    </bindings>
+    <bindings scd="~tns:rucContribuyente">
+      <class ref="com.wsoap.pwserver.consulta.RucContribuyente"/>
+    </bindings>
+  </bindings>
+</bindings>
+
